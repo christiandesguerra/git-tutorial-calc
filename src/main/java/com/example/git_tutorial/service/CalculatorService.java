@@ -7,4 +7,8 @@ public class CalculatorService {
     public Integer add(Integer firstNum, Integer secondNum) {
         return firstNum + secondNum;
     }
+
+    public Integer subtract(Integer firstNum, Integer secondNum) {
+        return firstNum - secondNum;
+    }
 }
