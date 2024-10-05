@@ -18,4 +18,10 @@ public class CalculatorController {
                        @PathVariable Integer secondNum) {
         return calculatorService.add(firstNum, secondNum);
     }
+
+    @GetMapping("/subtract/{firstNum}/{secondNum}")
+    public Integer subtract(@PathVariable Integer firstNum,
+                       @PathVariable Integer secondNum) {
+        return calculatorService.subtract(firstNum, secondNum);
+    }
 }
